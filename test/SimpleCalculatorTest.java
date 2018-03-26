@@ -39,7 +39,7 @@ class SimpleCalculatorTest {
     }
 
     @Test
-    @DisplayName("Testing add 0 + 0")
+    @DisplayName("Testing add 5 + 3")
     void testAdd5And3() {
         int first = 5;
         int second = 3;
@@ -56,7 +56,7 @@ class SimpleCalculatorTest {
         int second = 0;
         int expected = 0;
 
-        int result = SimpleCalculator.add(first, second);
+        int result = SimpleCalculator.sub(first, second);
         assertEquals(expected, result);
     }
 
@@ -67,7 +67,7 @@ class SimpleCalculatorTest {
         int second = 0;
         int expected = 1;
 
-        int result = SimpleCalculator.add(first, second);
+        int result = SimpleCalculator.sub(first, second);
         assertEquals(expected, result);
     }
 
@@ -78,18 +78,18 @@ class SimpleCalculatorTest {
         int second = 1;
         int expected = -1;
 
-        int result = SimpleCalculator.add(first, second);
+        int result = SimpleCalculator.sub(first, second);
         assertEquals(expected, result);
     }
 
     @Test
-    @DisplayName("Testing sub 0 - 0")
+    @DisplayName("Testing sub 5 - 3")
     void testSub5and3() {
         int first = 5;
         int second = 3;
         int expected = 2;
 
-        int result = SimpleCalculator.add(first, second);
+        int result = SimpleCalculator.sub(first, second);
         assertEquals(expected, result);
     }
 }
